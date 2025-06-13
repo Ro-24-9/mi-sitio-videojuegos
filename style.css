@@ -1,0 +1,161 @@
+html {
+  height: 100%;
+  width: 100%;
+  /* Fondo general */
+  body {
+    background-color: #f4f4f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    padding: 20px;
+  }
+
+  /* Título principal */
+  h1 {
+    color: #222;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  /* Subtítulo */
+  h2 {
+    color: #444;
+    margin-top: 40px;
+  }
+
+  /* Tarjetas (cards) personalizadas */
+  .card {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  /* Efecto hover para las tarjetas */
+  .card:hover {
+    transform: scale(1.02);
+  }
+
+  /* Título dentro de las tarjetas */
+  .card-title {
+    color: #0056b3;
+    font-weight: 600;
+  }
+
+  /* Parrafos dentro de las cards */
+  .card-body p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /* Contenedores generales */
+  section {
+    margin-bottom: 60px;
+  }
+
+  /* Géneros (como botones o ítems) */
+  .genero-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  /* Responsive para pantallas pequeñas */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 24px;
+    }
+
+    .card {
+      margin-bottom: 20px;
+    }
+    body { background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+      hr {
+        border: none;
+        border-top: 2px solid #ccc;
+        margin: 40px 0;
+      }.genero-item:hover {
+        background-color: #eef1f5;
+        transform: translateY(-2px);
+        transition: all 0.3s ease;
+        /* Sección general */
+        section {
+          margin: 40px 0;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          background-color: #ffffff;
+        }
+
+        /* Header y footer */
+        header, footer {
+          padding: 20px;
+          margin: 20px 0;
+          background-color: #e8e8e8;
+          border-radius: 10px;
+        }
+
+        /* FLEX para estructura responsive */
+        .flex-container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+          align-items: stretch;
+        }
+
+        .flex-item {
+          flex: 1 1 300px;
+          min-width: 250px;
+          padding: 20px;
+          background-color: #f0f0f0;
+          border-radius: 10px;
+        }
+
+        /* MEDIA QUERIES */
+        @media (max-width: 768px) {
+          body {
+            padding: 10px;
+          }
+
+          h1 {
+            font-size: 1.8em;
+          }
+
+          .flex-container {
+            flex-direction: column;
+          }
+
+          nav ul {
+            flex-direction: column;
+            align-items: center;
+          }
+
+          nav ul li {
+            margin: 10px 0;
+          }
+        }
+        @media (max-width: 768px) {
+          nav {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+          }
+
+          .card {
+            width: 90%;
+            margin: 10px auto;
+            text-align: center;
+          }
+
+          header h1 {
+            font-size: 1.8rem;
+            text-align: center;
+          }
+
+          footer {
+            text-align: center;
+            padding: 15px;
+          }
+        }
